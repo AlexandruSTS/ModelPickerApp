@@ -7,32 +7,53 @@
 
 import SwiftUI
 import RealityKit
+import ARKit
 
 struct ContentView : View {
+        
+    @State private var isPlacementEnabled = false
+    @State private var selectedModel: Model?
+    @State private var modelConfirmedForPlacement: Model?
+    
+    private var models: [Model] {
+        //Dynamicaly get file names
+        let filemanager = FileManager.default
+        
+        guard let path = Bundle.main.resourcePath,
+              let files = try? filemanager.contentsOfDirectory(atPath: path)
+        else {
+            return []
+        }
+        var availableModels: [Model] = []
+        
+        for filename in files where filename.hasSuffix("usdz") {
+            let modelName = filename.replacingOccurrences(of: ".usdz", with: "")
+            
+            let model = Model(modelName: modelName)
+            
+            availableModels.append(model)
+        }
+        return availableModels
+    }
+    
     var body: some View {
-        ARViewContainer().edgesIgnoringSafeArea(.all)
+        ZStack(alignment: .bottom){
+            ARViewContainer(modelConfirmedForPlacement: self.$modelConfirmedForPlacement)
+            
+            if self.isPlacementEnabled {
+                PlacementButtonsView(isPlacementEnabled: self.$isPlacementEnabled,
+                                     selectedModel: self.$selectedModel,
+                                     modelConfirmedForPlacement: self.$modelConfirmedForPlacement)
+            }
+            else {
+                ModelPickerView( isPlacementEnabled: self.$isPlacementEnabled,
+                                selectedModel: self.$selectedModel, models: self.models)
+            }
+        }
     }
 }
 
-struct ARViewContainer: UIViewRepresentable {
-    
-    func makeUIView(context: Context) -> ARView {
-        
-        let arView = ARView(frame: .zero)
-        
-        // Load the "Box" scene from the "Experience" Reality File
-        let boxAnchor = try! Experience.loadBox()
-        
-        // Add the box anchor to the scene
-        arView.scene.anchors.append(boxAnchor)
-        
-        return arView
-        
-    }
-    
-    func updateUIView(_ uiView: ARView, context: Context) {}
-    
-}
+
 
 #if DEBUG
 struct ContentView_Previews : PreviewProvider {
@@ -41,3 +62,5 @@ struct ContentView_Previews : PreviewProvider {
     }
 }
 #endif
+
+
