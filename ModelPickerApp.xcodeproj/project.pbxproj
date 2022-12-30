@@ -22,6 +22,12 @@
 		10BB8801295F2AC200D180C4 /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = 10BB8800295F2AC200D180C4 /* FocusEntity */; };
 		10BB8805295F34D300D180C4 /* FocusARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BB8804295F34D300D180C4 /* FocusARView.swift */; };
 		10BB880A295F3C2A00D180C4 /* TexturePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BB8809295F3C2A00D180C4 /* TexturePickerView.swift */; };
+		10BB8811295F3EC600D180C4 /* the_three_cone.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 10BB880B295F3EC400D180C4 /* the_three_cone.usdz */; };
+		10BB8812295F3EC600D180C4 /* daavid_cone.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 10BB880C295F3EC500D180C4 /* daavid_cone.usdz */; };
+		10BB8813295F3EC600D180C4 /* the_nine_cone.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 10BB880D295F3EC500D180C4 /* the_nine_cone.usdz */; };
+		10BB8814295F3EC600D180C4 /* the_seven_cone.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 10BB880E295F3EC500D180C4 /* the_seven_cone.usdz */; };
+		10BB8815295F3EC600D180C4 /* the_eighteen_cone.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 10BB880F295F3EC500D180C4 /* the_eighteen_cone.usdz */; };
+		10BB8816295F3EC600D180C4 /* anndy_cone.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 10BB8810295F3EC500D180C4 /* anndy_cone.usdz */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +46,12 @@
 		10BB87FD295E06EA00D180C4 /* PlacementButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacementButtonsView.swift; sourceTree = "<group>"; };
 		10BB8804295F34D300D180C4 /* FocusARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusARView.swift; sourceTree = "<group>"; };
 		10BB8809295F3C2A00D180C4 /* TexturePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TexturePickerView.swift; sourceTree = "<group>"; };
+		10BB880B295F3EC400D180C4 /* the_three_cone.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = the_three_cone.usdz; sourceTree = "<group>"; };
+		10BB880C295F3EC500D180C4 /* daavid_cone.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = daavid_cone.usdz; sourceTree = "<group>"; };
+		10BB880D295F3EC500D180C4 /* the_nine_cone.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = the_nine_cone.usdz; sourceTree = "<group>"; };
+		10BB880E295F3EC500D180C4 /* the_seven_cone.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = the_seven_cone.usdz; sourceTree = "<group>"; };
+		10BB880F295F3EC500D180C4 /* the_eighteen_cone.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = the_eighteen_cone.usdz; sourceTree = "<group>"; };
+		10BB8810295F3EC500D180C4 /* anndy_cone.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = anndy_cone.usdz; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +107,12 @@
 		107D4EC5293655F00013B968 /* 3DModels */ = {
 			isa = PBXGroup;
 			children = (
+				10BB8810295F3EC500D180C4 /* anndy_cone.usdz */,
+				10BB880C295F3EC500D180C4 /* daavid_cone.usdz */,
+				10BB880F295F3EC500D180C4 /* the_eighteen_cone.usdz */,
+				10BB880D295F3EC500D180C4 /* the_nine_cone.usdz */,
+				10BB880E295F3EC500D180C4 /* the_seven_cone.usdz */,
+				10BB880B295F3EC400D180C4 /* the_three_cone.usdz */,
 				107D4EC6293656350013B968 /* toy_byplane.usdz */,
 				107D4EC7293656360013B968 /* toy_car.usdz */,
 				107D4EC8293656370013B968 /* toy_robot_vintage.usdz */,
@@ -196,7 +214,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				107D4EC9293656370013B968 /* toy_byplane.usdz in Resources */,
+				10BB8811295F3EC600D180C4 /* the_three_cone.usdz in Resources */,
 				107D4ECB293656370013B968 /* toy_robot_vintage.usdz in Resources */,
+				10BB8812295F3EC600D180C4 /* daavid_cone.usdz in Resources */,
+				10BB8816295F3EC600D180C4 /* anndy_cone.usdz in Resources */,
+				10BB8813295F3EC600D180C4 /* the_nine_cone.usdz in Resources */,
+				10BB8815295F3EC600D180C4 /* the_eighteen_cone.usdz in Resources */,
+				10BB8814295F3EC600D180C4 /* the_seven_cone.usdz in Resources */,
 				107D4ECA293656370013B968 /* toy_car.usdz in Resources */,
 				107D4EBF293653160013B968 /* Preview Assets.xcassets in Resources */,
 				107D4EBC293653160013B968 /* Assets.xcassets in Resources */,
