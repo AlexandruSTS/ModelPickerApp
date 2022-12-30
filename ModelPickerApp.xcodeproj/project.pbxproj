@@ -71,17 +71,13 @@
 		107D4EB4293653130013B968 /* ModelPickerApp */ = {
 			isa = PBXGroup;
 			children = (
+				10BB8808295F3ADE00D180C4 /* Models */,
+				10BB8806295F3A9000D180C4 /* Views */,
 				107D4EB5293653130013B968 /* AppDelegate.swift */,
-				107D4EC5293655F00013B968 /* Models */,
+				107D4EC5293655F00013B968 /* 3DModels */,
 				107D4EB9293653130013B968 /* Experience.rcproject */,
 				107D4EBB293653160013B968 /* Assets.xcassets */,
 				107D4EBD293653160013B968 /* Preview Content */,
-				107D4ECC29367A7B0013B968 /* Model.swift */,
-				10BB87F9295E05D400D180C4 /* ModelPickerView.swift */,
-				10BB87FB295E067700D180C4 /* ARViewContainer.swift */,
-				10BB87FD295E06EA00D180C4 /* PlacementButtonsView.swift */,
-				107D4EB7293653130013B968 /* ContentView.swift */,
-				10BB8804295F34D300D180C4 /* FocusARView.swift */,
 			);
 			path = ModelPickerApp;
 			sourceTree = "<group>";
@@ -94,12 +90,40 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		107D4EC5293655F00013B968 /* Models */ = {
+		107D4EC5293655F00013B968 /* 3DModels */ = {
 			isa = PBXGroup;
 			children = (
 				107D4EC6293656350013B968 /* toy_byplane.usdz */,
 				107D4EC7293656360013B968 /* toy_car.usdz */,
 				107D4EC8293656370013B968 /* toy_robot_vintage.usdz */,
+			);
+			path = 3DModels;
+			sourceTree = "<group>";
+		};
+		10BB8806295F3A9000D180C4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				10BB8807295F3AB800D180C4 /* AR */,
+				10BB87F9295E05D400D180C4 /* ModelPickerView.swift */,
+				10BB87FD295E06EA00D180C4 /* PlacementButtonsView.swift */,
+				107D4EB7293653130013B968 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		10BB8807295F3AB800D180C4 /* AR */ = {
+			isa = PBXGroup;
+			children = (
+				10BB8804295F34D300D180C4 /* FocusARView.swift */,
+				10BB87FB295E067700D180C4 /* ARViewContainer.swift */,
+			);
+			path = AR;
+			sourceTree = "<group>";
+		};
+		10BB8808295F3ADE00D180C4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				107D4ECC29367A7B0013B968 /* Model.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
