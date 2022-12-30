@@ -20,6 +20,7 @@
 		10BB87FC295E067700D180C4 /* ARViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BB87FB295E067700D180C4 /* ARViewContainer.swift */; };
 		10BB87FE295E06EA00D180C4 /* PlacementButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BB87FD295E06EA00D180C4 /* PlacementButtonsView.swift */; };
 		10BB8801295F2AC200D180C4 /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = 10BB8800295F2AC200D180C4 /* FocusEntity */; };
+		10BB8803295F345300D180C4 /* FocusARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BB8802295F345300D180C4 /* FocusARView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		10BB87F9295E05D400D180C4 /* ModelPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelPickerView.swift; sourceTree = "<group>"; };
 		10BB87FB295E067700D180C4 /* ARViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewContainer.swift; sourceTree = "<group>"; };
 		10BB87FD295E06EA00D180C4 /* PlacementButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacementButtonsView.swift; sourceTree = "<group>"; };
+		10BB8802295F345300D180C4 /* FocusARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusARView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 				10BB87FB295E067700D180C4 /* ARViewContainer.swift */,
 				10BB87FD295E06EA00D180C4 /* PlacementButtonsView.swift */,
 				107D4EB7293653130013B968 /* ContentView.swift */,
+				10BB8802295F345300D180C4 /* FocusARView.swift */,
 			);
 			path = ModelPickerApp;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 			files = (
 				107D4EB8293653130013B968 /* ContentView.swift in Sources */,
 				107D4EB6293653130013B968 /* AppDelegate.swift in Sources */,
+				10BB8803295F345300D180C4 /* FocusARView.swift in Sources */,
 				10BB87FA295E05D400D180C4 /* ModelPickerView.swift in Sources */,
 				10BB87FE295E06EA00D180C4 /* PlacementButtonsView.swift in Sources */,
 				107D4EBA293653130013B968 /* Experience.rcproject in Sources */,
