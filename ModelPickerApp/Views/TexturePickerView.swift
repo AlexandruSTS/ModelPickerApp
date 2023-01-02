@@ -9,19 +9,30 @@ import SwiftUI
 
 struct TexturePickerView: View {
     
-    var colors: [Model]
+    @Binding  var selectedColor: UIColor?
+    @Binding  var isPlacementEnabled: Bool
 
+    var colors: [UIColor]{
+        var availableColors: [UIColor] = []
+        
+        availableColors.append(.cyan)
+        availableColors.append(.red)
+        availableColors.append(.yellow)
+
+        return availableColors
+    }
+    
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false){
             HStack(spacing: 30){
                 ForEach(0 ..< self.colors.count , id: \.self){ index in
                     Button {
-//                        self.selectedModel = self.models[index]
-//                        self.isPlacementEnabled = true
-
+                        self.selectedColor = self.colors[index]
+//                        print("DEBUG color: \( self.selectedColor)")
+                        self.isPlacementEnabled.toggle()
                     } label: {
-                        Image(systemName: "circle.circle.fill")
-                            .resizable()
+                        Circle()
+                            .fill(Color(self.colors[index]))
                             .frame(height: 80 )
                             .aspectRatio(1/1, contentMode: .fit)
                             .background(Color.white)
@@ -37,8 +48,3 @@ struct TexturePickerView: View {
     }
 }
 
-//struct TexturePickerView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        TexturePickerView()
-//    }
-//}

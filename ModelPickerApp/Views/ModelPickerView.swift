@@ -9,9 +9,9 @@ import SwiftUI
 
 struct ModelPickerView: View {
     
-    @Binding var isPlacementEnabled: Bool
     @Binding var selectedModel: Model?
-    
+    @Binding var isPlacementEnabledColor: Bool
+
     var models: [Model]
 
     var body: some View {
@@ -20,15 +20,17 @@ struct ModelPickerView: View {
                 ForEach(0 ..< self.models.count , id: \.self){ index in
                     Button {
                         self.selectedModel = self.models[index]
-                        self.isPlacementEnabled = true
-
+                        self.isPlacementEnabledColor.toggle()
                     } label: {
-                        Image(uiImage: self.models[index].image)
-                            .resizable()
-                            .frame(height: 80 )
-                            .aspectRatio(1/1, contentMode: .fit)
-                            .background(Color.white)
-                            .cornerRadius(12)
+                        VStack{
+                            Text(self.models[index].modelName.replacingOccurrences(of: "_", with: " "))
+                            Image(uiImage: self.models[index].image)
+                                .resizable()
+                                .frame(height: 80 )
+                                .aspectRatio(1/1, contentMode: .fit)
+                                .background(Color.white)
+                                .cornerRadius(12)
+                        }
                     }
                     .buttonStyle(PlainButtonStyle())
                 }

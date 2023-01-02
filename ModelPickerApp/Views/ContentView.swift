@@ -10,10 +10,12 @@ import RealityKit
 import ARKit
 
 struct ContentView : View {
-        
+    
     @State private var isPlacementEnabled = false
+    @State private var isPlacementEnabledColor = false
     @State private var selectedModel: Model?
     @State private var modelConfirmedForPlacement: Model?
+    @State private var selectedColor: UIColor?
     
     private var models: [Model] {
         //Dynamicaly get file names
@@ -38,16 +40,21 @@ struct ContentView : View {
     
     var body: some View {
         ZStack(alignment: .bottom){
-            ARViewContainer(modelConfirmedForPlacement: self.$modelConfirmedForPlacement)
+            ARViewContainer(modelConfirmedForPlacement: self.$modelConfirmedForPlacement, selectedColor: self.$selectedColor)
             
-            if self.isPlacementEnabled {
-                PlacementButtonsView(isPlacementEnabled: self.$isPlacementEnabled,
-                                     selectedModel: self.$selectedModel,
-                                     modelConfirmedForPlacement: self.$modelConfirmedForPlacement)
+            if self.isPlacementEnabledColor {
+                TexturePickerView(selectedColor: self.$selectedColor, isPlacementEnabled: self.$isPlacementEnabled )
+                
+                if self.isPlacementEnabled {
+                    PlacementButtonsView( isPlacementEnabledColor: self.$isPlacementEnabledColor, isPlacementEnabled: self.$isPlacementEnabled,
+                                          selectedModel: self.$selectedModel,
+                                          modelConfirmedForPlacement: self.$modelConfirmedForPlacement )
+                }
             }
             else {
-                ModelPickerView( isPlacementEnabled: self.$isPlacementEnabled,
-                                selectedModel: self.$selectedModel, models: self.models)
+                VStack(spacing: 0){
+                    ModelPickerView( selectedModel: self.$selectedModel, isPlacementEnabledColor: self.$isPlacementEnabledColor, models: self.models)
+                }
             }
         }
     }

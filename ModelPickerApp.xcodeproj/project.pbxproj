@@ -12,22 +12,17 @@
 		107D4EBA293653130013B968 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 107D4EB9293653130013B968 /* Experience.rcproject */; };
 		107D4EBC293653160013B968 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 107D4EBB293653160013B968 /* Assets.xcassets */; };
 		107D4EBF293653160013B968 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 107D4EBE293653160013B968 /* Preview Assets.xcassets */; };
-		107D4EC9293656370013B968 /* toy_byplane.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 107D4EC6293656350013B968 /* toy_byplane.usdz */; };
-		107D4ECA293656370013B968 /* toy_car.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 107D4EC7293656360013B968 /* toy_car.usdz */; };
-		107D4ECB293656370013B968 /* toy_robot_vintage.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 107D4EC8293656370013B968 /* toy_robot_vintage.usdz */; };
 		107D4ECD29367A7B0013B968 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107D4ECC29367A7B0013B968 /* Model.swift */; };
+		10B80B442962F83C00E6B3B6 /* MeshEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B80B432962F83C00E6B3B6 /* MeshEnum.swift */; };
+		10B80B482963360A00E6B3B6 /* the_four_cone.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 10B80B452963360900E6B3B6 /* the_four_cone.usdz */; };
+		10B80B492963360A00E6B3B6 /* the_eight_cone.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 10B80B462963360A00E6B3B6 /* the_eight_cone.usdz */; };
+		10B80B4A2963360A00E6B3B6 /* the_five_cone.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 10B80B472963360A00E6B3B6 /* the_five_cone.usdz */; };
 		10BB87FA295E05D400D180C4 /* ModelPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BB87F9295E05D400D180C4 /* ModelPickerView.swift */; };
 		10BB87FC295E067700D180C4 /* ARViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BB87FB295E067700D180C4 /* ARViewContainer.swift */; };
 		10BB87FE295E06EA00D180C4 /* PlacementButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BB87FD295E06EA00D180C4 /* PlacementButtonsView.swift */; };
 		10BB8801295F2AC200D180C4 /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = 10BB8800295F2AC200D180C4 /* FocusEntity */; };
 		10BB8805295F34D300D180C4 /* FocusARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BB8804295F34D300D180C4 /* FocusARView.swift */; };
 		10BB880A295F3C2A00D180C4 /* TexturePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BB8809295F3C2A00D180C4 /* TexturePickerView.swift */; };
-		10BB8811295F3EC600D180C4 /* the_three_cone.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 10BB880B295F3EC400D180C4 /* the_three_cone.usdz */; };
-		10BB8812295F3EC600D180C4 /* daavid_cone.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 10BB880C295F3EC500D180C4 /* daavid_cone.usdz */; };
-		10BB8813295F3EC600D180C4 /* the_nine_cone.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 10BB880D295F3EC500D180C4 /* the_nine_cone.usdz */; };
-		10BB8814295F3EC600D180C4 /* the_seven_cone.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 10BB880E295F3EC500D180C4 /* the_seven_cone.usdz */; };
-		10BB8815295F3EC600D180C4 /* the_eighteen_cone.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 10BB880F295F3EC500D180C4 /* the_eighteen_cone.usdz */; };
-		10BB8816295F3EC600D180C4 /* anndy_cone.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 10BB8810295F3EC500D180C4 /* anndy_cone.usdz */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,21 +32,16 @@
 		107D4EB9293653130013B968 /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
 		107D4EBB293653160013B968 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		107D4EBE293653160013B968 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		107D4EC6293656350013B968 /* toy_byplane.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = toy_byplane.usdz; sourceTree = "<group>"; };
-		107D4EC7293656360013B968 /* toy_car.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = toy_car.usdz; sourceTree = "<group>"; };
-		107D4EC8293656370013B968 /* toy_robot_vintage.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = toy_robot_vintage.usdz; sourceTree = "<group>"; };
 		107D4ECC29367A7B0013B968 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		10B80B432962F83C00E6B3B6 /* MeshEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshEnum.swift; sourceTree = "<group>"; };
+		10B80B452963360900E6B3B6 /* the_four_cone.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = the_four_cone.usdz; sourceTree = "<group>"; };
+		10B80B462963360A00E6B3B6 /* the_eight_cone.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = the_eight_cone.usdz; sourceTree = "<group>"; };
+		10B80B472963360A00E6B3B6 /* the_five_cone.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = the_five_cone.usdz; sourceTree = "<group>"; };
 		10BB87F9295E05D400D180C4 /* ModelPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelPickerView.swift; sourceTree = "<group>"; };
 		10BB87FB295E067700D180C4 /* ARViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewContainer.swift; sourceTree = "<group>"; };
 		10BB87FD295E06EA00D180C4 /* PlacementButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacementButtonsView.swift; sourceTree = "<group>"; };
 		10BB8804295F34D300D180C4 /* FocusARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusARView.swift; sourceTree = "<group>"; };
 		10BB8809295F3C2A00D180C4 /* TexturePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TexturePickerView.swift; sourceTree = "<group>"; };
-		10BB880B295F3EC400D180C4 /* the_three_cone.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = the_three_cone.usdz; sourceTree = "<group>"; };
-		10BB880C295F3EC500D180C4 /* daavid_cone.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = daavid_cone.usdz; sourceTree = "<group>"; };
-		10BB880D295F3EC500D180C4 /* the_nine_cone.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = the_nine_cone.usdz; sourceTree = "<group>"; };
-		10BB880E295F3EC500D180C4 /* the_seven_cone.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = the_seven_cone.usdz; sourceTree = "<group>"; };
-		10BB880F295F3EC500D180C4 /* the_eighteen_cone.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = the_eighteen_cone.usdz; sourceTree = "<group>"; };
-		10BB8810295F3EC500D180C4 /* anndy_cone.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = anndy_cone.usdz; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,17 +97,19 @@
 		107D4EC5293655F00013B968 /* 3DModels */ = {
 			isa = PBXGroup;
 			children = (
-				10BB8810295F3EC500D180C4 /* anndy_cone.usdz */,
-				10BB880C295F3EC500D180C4 /* daavid_cone.usdz */,
-				10BB880F295F3EC500D180C4 /* the_eighteen_cone.usdz */,
-				10BB880D295F3EC500D180C4 /* the_nine_cone.usdz */,
-				10BB880E295F3EC500D180C4 /* the_seven_cone.usdz */,
-				10BB880B295F3EC400D180C4 /* the_three_cone.usdz */,
-				107D4EC6293656350013B968 /* toy_byplane.usdz */,
-				107D4EC7293656360013B968 /* toy_car.usdz */,
-				107D4EC8293656370013B968 /* toy_robot_vintage.usdz */,
+				10B80B462963360A00E6B3B6 /* the_eight_cone.usdz */,
+				10B80B472963360A00E6B3B6 /* the_five_cone.usdz */,
+				10B80B452963360900E6B3B6 /* the_four_cone.usdz */,
 			);
 			path = 3DModels;
+			sourceTree = "<group>";
+		};
+		10B80B422962F80500E6B3B6 /* enum */ = {
+			isa = PBXGroup;
+			children = (
+				10B80B432962F83C00E6B3B6 /* MeshEnum.swift */,
+			);
+			path = enum;
 			sourceTree = "<group>";
 		};
 		10BB8806295F3A9000D180C4 /* Views */ = {
@@ -144,6 +136,7 @@
 		10BB8808295F3ADE00D180C4 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				10B80B422962F80500E6B3B6 /* enum */,
 				107D4ECC29367A7B0013B968 /* Model.swift */,
 			);
 			path = Models;
@@ -213,17 +206,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				107D4EC9293656370013B968 /* toy_byplane.usdz in Resources */,
-				10BB8811295F3EC600D180C4 /* the_three_cone.usdz in Resources */,
-				107D4ECB293656370013B968 /* toy_robot_vintage.usdz in Resources */,
-				10BB8812295F3EC600D180C4 /* daavid_cone.usdz in Resources */,
-				10BB8816295F3EC600D180C4 /* anndy_cone.usdz in Resources */,
-				10BB8813295F3EC600D180C4 /* the_nine_cone.usdz in Resources */,
-				10BB8815295F3EC600D180C4 /* the_eighteen_cone.usdz in Resources */,
-				10BB8814295F3EC600D180C4 /* the_seven_cone.usdz in Resources */,
-				107D4ECA293656370013B968 /* toy_car.usdz in Resources */,
+				10B80B492963360A00E6B3B6 /* the_eight_cone.usdz in Resources */,
+				10B80B4A2963360A00E6B3B6 /* the_five_cone.usdz in Resources */,
 				107D4EBF293653160013B968 /* Preview Assets.xcassets in Resources */,
 				107D4EBC293653160013B968 /* Assets.xcassets in Resources */,
+				10B80B482963360A00E6B3B6 /* the_four_cone.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +228,7 @@
 				10BB87FE295E06EA00D180C4 /* PlacementButtonsView.swift in Sources */,
 				10BB880A295F3C2A00D180C4 /* TexturePickerView.swift in Sources */,
 				107D4EBA293653130013B968 /* Experience.rcproject in Sources */,
+				10B80B442962F83C00E6B3B6 /* MeshEnum.swift in Sources */,
 				107D4ECD29367A7B0013B968 /* Model.swift in Sources */,
 				10BB87FC295E067700D180C4 /* ARViewContainer.swift in Sources */,
 			);

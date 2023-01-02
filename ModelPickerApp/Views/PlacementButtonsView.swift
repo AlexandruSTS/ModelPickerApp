@@ -9,10 +9,11 @@ import SwiftUI
 
 struct PlacementButtonsView: View {
     
+    @Binding var isPlacementEnabledColor: Bool
     @Binding var isPlacementEnabled: Bool
     @Binding var selectedModel: Model?
     @Binding var modelConfirmedForPlacement: Model?
-    
+
     var body: some View {
         HStack{
             //Cancel button
@@ -43,6 +44,7 @@ struct PlacementButtonsView: View {
     }
     
     func resetParameters(){
+        self.isPlacementEnabledColor.toggle()
         self.isPlacementEnabled.toggle()
         self.selectedModel = nil
     }
